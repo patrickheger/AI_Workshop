@@ -1,0 +1,20 @@
+[project]
+name = "ai-workspace"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Patrick Heger",email = "pheger@brox.de"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scikit-learn (>=1.7.0,<2.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
