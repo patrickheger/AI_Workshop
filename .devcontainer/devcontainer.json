@@ -1,0 +1,99 @@
+////////////////////////////////////////////////////////////
+//////// DevContainer for Python Jupyter Notebooks /////////
+////////////////////////////////////////////////////////////
+
+////////// AUTHOR:  Jan Rother
+////////// DATE:    2025-06
+////////// VERSION: 1.0
+
+{
+  "name": "Python DevContainer",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "remoteUser": "root",
+  "workspaceFolder": "/workspace/",
+  // --- Lifecycle Scripts ---
+  "onCreateCommand": "",
+  "updateContentCommand": "apt update && apt upgrade -y",
+  "postCreateCommand": "",
+  "postStartCommand": "cat /root/welcome.txt",
+  "postAttachCommand": "",
+  // --- Software Components ---
+  "features": {
+    // none
+    // -> see https://containers.dev/features for all available features
+  },
+  // --- Editor Configuration ---
+  "customizations": {
+    // --- Microsoft Visual Studio Code ---
+    "vscode": {
+      "settings": {
+        // General Settings
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh"
+          }
+        },
+        "editor.wordWrap": "on",
+        "editor.tabSize": 4,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "off"
+        }
+      },
+      "extensions": [
+        // Python
+        "ms-python.python",
+        // Pylance
+        "ms-python.vscode-pylance",
+        // Jupyter
+        "ms-toolsai.jupyter",
+        // Docker
+        "ms-azuretools.vscode-docker",
+        // Dev Containers
+        "ms-vscode-remote.remote-containers",
+        // GitHub Codespaces
+        "github.codespaces",
+        // JetBrains IDE Keymap
+        "isudox.vscode-jetbrains-keybindings",
+        // GitHub Copilot
+        "github.copilot",
+        // GitHub Copilot Chat
+        "github.copilot-chat",
+        // Live Share
+        "ms-vsliveshare.vsliveshare",
+        // Markdown All in One
+        "yzhang.markdown-all-in-one",
+        // Markdown PDF
+        "yzane.markdown-pdf",
+        // PlantUML
+        "jebbs.plantuml",
+        // Grammarly
+        "znck.grammarly",
+        // Code Spell Checker
+        "streetsidesoftware.code-spell-checker",
+        // Conventional Commits
+        "vivaxy.vscode-conventional-commits"
+      ]
+    },
+    // --- JetBrains IDEs ---
+    "jetbrains": {
+      "settings": {
+        "com.intellij:app:BaseRefactoringSettings.safe_delete_search_in_comments": true,
+        "com.intellij:app:EditorSettings.soft_wrap_file_masks": "*.md; *.txt; *.tex",
+        "com.intellij:app:GeneralSettings.autoSaveFiles": true,
+        "com.intellij:app:GeneralSettings.autoSaveIfInactive": true,
+        "com.intellij:app:GeneralSettings.inactiveTimeout": 30,
+        "com.intellij:app:ProjectViewSharedSettings.foldersAlwaysOnTop": true,
+        "com.intellij:app:ProjectViewSharedSettings.showExcludedFiles": true,
+        "com.intellij:app:UsageViewSettings.group_by_directory_structure": true,
+        "com.intellij:app:VcsApplicationSettings.commit_from_local_changes": true,
+        "com.intellij:app:VcsApplicationSettings.mark_excluded_as_ignored": true,
+        // more settings are available
+        // see https://www.jetbrains.com/help/idea/dev-containers-starting-page.html
+      }
+    }
+  }
+}
