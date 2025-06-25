@@ -1,0 +1,105 @@
+############################################################
+################# GITIGNORE: PROJECT LEVEL #################
+############################################################
+
+
+
+# |------------------- Containerization -------------------|
+
+
+
+
+# |---------------------- Build Tools ---------------------|
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+yarn*.lock
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+
+# |----------------- Build Generated Files ----------------|
+bin/
+build/
+target/
+out/
+
+
+
+# |-------------------- Compiled Files --------------------|
+dist/
+tmp/
+
+
+
+# |---------------------- Log Files ----------------------|
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+
+# |---------------- IDE Configuration Files ---------------|
+# JetBrains IDEs
+.idea/
+.run/
+*.iml
+*.ipr
+*.iws
+# VS Code
+.vscode/
+
+
+
+# |--------------------- Package Files --------------------|
+*.zip
+*.tar.gz
+*.rar
+*.nar
+
+
+
+# |---------------- Version Control System ----------------|
+
+
+
+
+# |------------------- Operating System -------------------|
+# Linux
+*~
+# Windows
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+[Dd]esktop.ini
+*.lnk
+
+
+
+# |-------------- Development Infrastructure --------------|
+*.sql
+*.env
+
+
+
+# |--------------------- Environments ---------------------|
+env/
+venv/
+.env/
+.venv/
+.env
+.venv
+
+
+
+# |--------------------- Miscellaneous --------------------|
+*.pdf
+
+
+
+############################################################
