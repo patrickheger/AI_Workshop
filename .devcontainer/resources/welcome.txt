@@ -1,0 +1,21 @@
+|------------------------------------------------|
+|          Python Development Container          |
+|                    Welcome!                    |
+|                                                |
+| Jan Rother                                     |
+| https://github.com/JanRother-Volkswagen/       |
+|------------------------------------------------|
+
+ Welcome to the Python development container! The
+ container bases on the official Python image and
+ includes a all necessary tools for building with
+ the Python technologies.
+
+ - Installing Dependencies ....... poetry install
+
+Get your binaries ready with Git LFS by executing:
+    git lfs fetch --all
+    git lfs pull
+
+ Available Tools: git, python, pip, poetry, ...
+ The workspace is ready!
